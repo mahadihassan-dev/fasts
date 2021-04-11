@@ -1,0 +1,488 @@
+/* 
+    Theme Name: Fasts
+    Coded By: Mahadi Hassan
+    Date: 07/04/2021
+    version: 1v
+
+    >>Theme Core CSS Styles
+    
+*/
+
+
+/* ===Google font Connected Here=== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap');
+
+/* ===Custom Font Connected here=== */
+
+@font-face {
+    font-family: 'Filson Pro' sans-serif medium;
+    src: url(../font/FilsonPro-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Filson Pro' sans-serif bold;
+    src: url(../font/FilsonPro-Bold.ttf);
+    font-weight: 700;
+}
+
+
+/* ===Default CSS Start=== */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+body {
+    font-family: var(--default-font-family) !important;
+    position: relative;
+}
+
+
+/* ===Default CSS End=== */
+
+
+/* ===Default CSS Varriables Start === */
+
+:root {
+    --default-color: #E95F1E;
+    --default-font-family: 'Filson Pro' sans-serif medium;
+    --filson-pro-bold: 'Filson Pro' sans-serif bold;
+}
+
+
+/* ===Default CSS Varriables End === */
+
+
+/* ====WhatsApp Section Start==== */
+
+.whatsapp-chat {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1;
+}
+
+
+/* ====WhatsApp Section End==== */
+
+
+/* ====Header Section Start==== */
+
+.header-section {
+    padding: 0px 0px;
+    background: #fff;
+    margin-top: 15px;
+}
+
+
+/* ./Header Part-1*/
+
+.logo {
+    text-align: center;
+}
+
+.logo a img {
+    width: 130px;
+}
+
+.search-panal ul {
+    margin-bottom: 0;
+}
+
+.search-panal ul li {
+    display: inline-block;
+    margin: 0px 10px;
+    position: relative;
+}
+
+.search-box::after {
+    position: absolute;
+    content: '\f002';
+    font-family: 'Font Awesome 5 pro';
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+}
+
+.search-panal {
+    text-align: center;
+}
+
+.search-box_home {
+    padding: 5px 25px;
+    border-radius: 50px;
+    border: 1px solid #1111113d;
+    width: 245px;
+    height: 40px;
+}
+
+.search-panal {
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.search_btn {
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid var(--default-color);
+    color: var(--default-color);
+    border-radius: 50px;
+    position: relative;
+    box-shadow: 0px 4px 0px 1px var(--default-color);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.contact-us_btn {
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid var(--default-color);
+    color: var(--default-color);
+    border-radius: 50px;
+    position: relative;
+    box-shadow: 0px 4px 0px 1px var(--default-color);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.search_btn:hover,
+.contact-us_btn:hover {
+    color: #E95F1E;
+    text-decoration: none;
+}
+
+
+/* ./Navigation Bar */
+
+input#check {
+    display: none
+}
+
+label.chck_bx {
+    display: none;
+    margin-bottom: 0;
+}
+
+.navigation {
+    background: var(--default-color);
+}
+
+.nav-menu {
+    text-align: center;
+    position: relative;
+}
+
+.nav-menu ul {
+    margin-bottom: 0;
+}
+
+.nav-menu ul li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.nav-menu ul li a {
+    display: block;
+    padding: 15px 5px;
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--default-font-family);
+}
+
+span.menu-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* ====Header Section End==== */
+
+
+/* ====Banner Section Start==== */
+
+.banner-main {
+    background: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 350px;
+}
+
+
+/* ====Banner Section End==== */
+
+
+/* ===About Section Start==== */
+
+.about-main {
+    padding: 40px 0px;
+}
+
+.about-content p {
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: center;
+    font-family: var(--default-font-family);
+    font-weight: 400;
+}
+
+.about-content p span {
+    color: var(--default-color);
+}
+
+
+/* ===About Section Start==== */
+
+
+/* ===Service Section Start==== */
+
+.service-main {
+    background: #e95f1e24;
+    padding: 25px 0px;
+}
+
+.service-card {
+    position: relative;
+}
+
+.service-head h2 {
+    color: #E95F1E;
+}
+
+.service-card .service-card-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    height: 55px;
+    width: 160px;
+    background: #DADF33;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0px 2px 0px 2px var(--default-color);
+    color: #E95F1E;
+    text-decoration: none;
+}
+
+.service-card img {
+    border-radius: 50px;
+    box-shadow: 0px 2px 0px 2px var(--default-color);
+}
+
+.service-row-1 {
+    margin-top: 15px;
+}
+
+.service-row-2 {
+    margin-top: 35px;
+}
+
+
+/* ===Service Section End==== */
+
+
+/* ===Contact Form Section Start=== */
+
+section#contact-us {
+    padding: 25px 0px 170px 0px;
+}
+
+.ufName label,
+.ulName label,
+.uEmail label,
+.uphNumber label,
+.store-select-option label,
+.enq-msg label {
+    display: block;
+    color: #E95F1E;
+}
+
+.first-name,
+.last-name,
+.user_email,
+.user-phone {
+    width: 540px;
+    height: 35px;
+    padding: 15px;
+    line-height: 35px;
+    border-radius: 30px;
+    border: 1px solid #E95F1E;
+    background: #e95f1e2e;
+    font-size: 14px;
+    color: #E95F1E;
+}
+
+.first-name::placeholder,
+.last-name::placeholder,
+.user_email::placeholder,
+.user-phone::placeholder,
+.enquiry_box::placeholder {
+    color: var(--default-color);
+}
+
+.store-select-option select {
+    width: 1110px;
+    height: 40px;
+    padding: 10px 15px;
+    line-height: 40px;
+    border: 1px solid #E95F1E;
+    border-radius: 30px;
+    background: #e95f1e2e;
+    color: #E95F1E;
+}
+
+.enquiry_box {
+    width: 1110px;
+    height: 175px;
+    padding: 15px;
+    background: #e95f1e2e;
+    border: 1px solid #E95F1E;
+    border-radius: 30px;
+    color: #E95F1E;
+}
+
+button.submit-btn {
+    width: 1110px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #E95F1E;
+    background: #E95F1E;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+.name,
+.email-phone,
+.store-option,
+.enquiry-box,
+.submit {
+    margin-top: 15px;
+}
+
+
+/* ===Contact Form Section End=== */
+
+
+/* ====Download Magazine Section Start==== */
+
+section#megazine {
+    background: #DADF33;
+}
+
+.download-megazine h3 {
+    color: var(--default-color);
+    font-family: var(--default-font-family);
+    font-size: 32px;
+}
+
+.download-megazine {
+    padding: 150px 0px;
+}
+
+.download-megazine a.download-btn {
+    background-color: var(--default-color);
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    width: 285px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.megazine-book {
+    position: relative;
+}
+
+.megazine-book img {
+    position: absolute;
+    top: -135px;
+    left: 0;
+}
+
+.download-megazine {
+    padding: 75px 0px;
+}
+
+
+/* ====Download Magazine Section End==== */
+
+
+/* ====Footer Area Section Start==== */
+
+.footer-main {
+    background: var(--default-color);
+}
+
+.footer-main {
+    background: var(--default-color);
+    padding: 81px 0px;
+}
+
+li.location-address {
+    margin: 5px 0px;
+    color: #fff;
+}
+
+.social-media ul li {
+    display: inline-block;
+    font-size: 32px;
+}
+
+.social-media ul li a {
+    color: #DADF34;
+}
+
+h4.sitemap-title,
+h4.services-area-title,
+h4.social-media-title,
+h4.locations-head,
+p.services-area-details,
+.sitemap ul li a,
+.services-area-list-2 ul li a,
+.services-area-list-1 ul li a {
+    color: #fff;
+}
+
+h4.sitemap-title,
+h4.services-area-title,
+h4.social-media-title,
+h4.locations-head {
+    font-size: 28px;
+}
+
+p.services-area-details,
+li.location-address,
+.sitemap ul li a,
+.services-area-list-2 ul li a,
+.services-area-list-1 ul li a {
+    font-size: 18px;
+}
+
+.copyright {
+    border-top: 1px solid #DADF33;
+    padding: 40px 0px;
+}
+
+.copyright h6 {
+    color: #fff;
+}
+
+
+/* ====Footer Area Section End==== */

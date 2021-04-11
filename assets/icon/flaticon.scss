@@ -1,0 +1,37 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?9494a8e20a88a2e79de125d8b9cb9f53") format("truetype"),
+url("./flaticon.woff?9494a8e20a88a2e79de125d8b9cb9f53") format("woff"),
+url("./flaticon.woff2?9494a8e20a88a2e79de125d8b9cb9f53") format("woff2"),
+url("./flaticon.eot?9494a8e20a88a2e79de125d8b9cb9f53#iefix") format("embedded-opentype"),
+url("./flaticon.svg?9494a8e20a88a2e79de125d8b9cb9f53#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "facebook-circular-logo": "\f101",
+    "instagram": "\f102",
+    "youtube": "\f103",
+);
+
+.flaticon-facebook-circular-logo:before {
+    content: map-get($flaticon-map, "facebook-circular-logo");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-youtube:before {
+    content: map-get($flaticon-map, "youtube");
+}
